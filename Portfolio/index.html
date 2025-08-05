@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aman Sharma - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Aman Sharma</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#chatbot">Chatbot</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I'm Aman Sharma, passionate about Web Development and AI.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+      Contact Me
+    </button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a 2026 Computer Science student aiming to get placed in top IT companies like Capgemini and Cognizant. Currently working on Web Development and learning core CS subjects.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Java (Core)</li>
+      <li>Learning: DBMS, OS, OOPs, CN</li>
+    </ul>
+  </section>
+
+  <!-- Chatbot -->
+  <section id="chatbot">
+    <h2>Ask Me Anything!</h2>
+    <input type="text" id="userInput" placeholder="Type your question..." />
+    <button onclick="getBotReply()">Send</button>
+    <div id="botReply"></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:amansharmabtp555@gmail.com">amansharmabtp555@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/aman-sharma-b2400b280/" target="_blank">linkedin.com/in/aman-sharma-b2400b280</a></p>
+    <p>GitHub: <a href="https://github.com/sharma295aman" target="_blank">github.com/sharma295aman</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
