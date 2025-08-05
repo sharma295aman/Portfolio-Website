@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #111;
+}
+
+/* Navbar */
+header {
+  background: #222;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #00ffff;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+}
+
+/* Home Section */
+#home {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+#home h2,
+#home p,
+#home button {
+  position: relative;
+  z-index: 1;
+}
+
+#home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#home button {
+  padding: 10px 20px;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#home button:hover {
+  background-color: #00bfbf;
+}
+
+/* Sections */
+section {
+  padding: 60px 40px;
+}
+
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#skills li {
+  background: #222;
+  padding: 10px 15px;
+  border-left: 4px solid #00ffff;
+  border-radius: 5px;
+}
+
+/* Chatbot */
+#chatbot input {
+  padding: 10px;
+  width: 70%;
+  max-width: 400px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#chatbot button {
+  padding: 10px 15px;
+  background-color: #00ffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#chatbot button:hover {
+  background-color: #00bfbf;
+}
+
+#botReply {
+  margin-top: 15px;
+  background: #222;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Contact */
+#contact a {
+  text-decoration: none;
+  color: #00ffff;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #home h2 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+}
