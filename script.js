@@ -37,3 +37,12 @@ function getBotReply() {
   replyDiv.innerText = reply;
   document.getElementById("userInput").value = "";
 }
+
+
+// ✅ Press Enter to Send Message
+document.getElementById("userInput").addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault(); // Stop form submission or line break
+    getBotReply();      // Directly call the bot reply function
+  }
+});
